@@ -1,0 +1,22 @@
+export const siteMetadata = {
+  author: "菅博子",
+  title: "パステル音楽教室",
+  description: "",
+  language: "jp-ja",
+  siteUrl: "",
+  siteLogo: "",
+  image: "",
+  ogImage: "",
+  openGraph: {
+    card: "summary_large_image",
+    site: "",
+    creator: "@yokoiwasaki6",
+    images: "",
+  },
+  email: "puretone.fo.88@gmail.com",
+  instagram: "https://www.instagram.com/fl_puretone?igsh=ajFudWs2bTM4bzZu",
+  youtube: "https://youtube.com/@hirokoocarina?si=OPJccqJyRjGNOE-n",
+  youtube_okarina: "https://youtube.com/@hirokoocarina?si=OPJccqJyRjGNOE-n",
+  locale: "ja-JP",
+  keywords: "音楽教室,オカリナ,フルート",
+};
