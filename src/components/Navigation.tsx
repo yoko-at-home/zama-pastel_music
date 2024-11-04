@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { useState } from "react";
-import Link from "next/link";
+import { CustomLink } from "./CustomLink";
 
 export const labels = [
   { href: "/about", label: "ご挨拶" },
@@ -10,25 +10,6 @@ export const labels = [
   { href: "/#contact", label: "Contact" },
   { href: "/gallery", label: "Gallery" },
 ];
-
-type CustomLinkProps = {
-  href: string;
-} & React.AnchorHTMLAttributes<HTMLAnchorElement>;
-
-export const CustomLink = ({ href, ...rest }: CustomLinkProps) => {
-  const isInternalLink = href.startsWith("/");
-  const isAnchorLink = href.startsWith("#");
-
-  if (isInternalLink) {
-    return <Link href={href} {...rest}></Link>;
-  }
-
-  if (isAnchorLink) {
-    return <a href={href} {...rest} />;
-  }
-
-  return <a target="_blank" rel="noopener noreferrer" href={href} {...rest} />;
-};
 
 type Props = {
   className?: string;
@@ -67,7 +48,7 @@ export const Navigation: React.FC<Props> = () => {
           <button
             type="button"
             aria-label="toggle modal"
-            className="fixed -top-7 h-4/5 w-full cursor-auto focus:outline-none"
+            className="fixed top-5 h-4/5 w-full cursor-auto focus:outline-none"
             onClick={handleNavBarOpen}
           ></button>
           <nav className="z-0 py-8 text-center md:mt-40">

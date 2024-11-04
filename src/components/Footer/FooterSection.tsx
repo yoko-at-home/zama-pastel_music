@@ -1,7 +1,9 @@
 "use client";
 import { siteMetadata } from "@/data/siteMetadata";
-import { CustomLink, labels } from "../Navigation";
+import { labels } from "../Navigation";
 import Link from "next/link";
+import { IoIosMail } from "react-icons/io";
+import { CustomLink } from "../CustomLink";
 
 export const FooterSection = () => {
   return (
@@ -22,7 +24,7 @@ export const FooterSection = () => {
       </nav>
       <div className="flex justify-center space-x-5">
         <a href={`mailto:${siteMetadata.email}`} title="Email">
-          メール
+          <IoIosMail />
         </a>
         <Link href={siteMetadata.instagram} target="_blank">
           Instagram
