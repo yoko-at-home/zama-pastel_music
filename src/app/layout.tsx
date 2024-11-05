@@ -16,9 +16,16 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+
 export const metadata: Metadata = {
   title: siteMetadata.title,
   description: siteMetadata.description,
+  themeColor: "#BBDDF2", // テーマカラー
+  icons: {
+    icon: "/static/AppImages/ios/192.png",
+    apple: "/static/AppImages/ios/192.png",
+  },
+  manifest: "/manifest.json", // manifest.jsonへのパス
 };
 
 export default function RootLayout({

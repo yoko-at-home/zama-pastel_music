@@ -9,7 +9,7 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/static/AppImages//AppImages/windows11/SmallTile.scale-100.png",
+      "src": "/static/AppImages//windows11/SmallTile.scale-100.png",
       "sizes": "71x71"
     },
     {
