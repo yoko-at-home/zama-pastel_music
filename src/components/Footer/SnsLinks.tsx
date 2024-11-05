@@ -8,7 +8,7 @@ import { ClipTextTitleReversed } from "../TextStyle/ClipTextTitle";
 
 export const SnsLinks = () => {
   return (
-    <div className="flex justify-center space-x-5 mb-6 items-center">
+    <div className="flex justify-center space-x-5 mb-3 items-center">
       <a
         href={`mailto:${siteMetadata.email}`}
         title="Email"

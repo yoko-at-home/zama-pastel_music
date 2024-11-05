@@ -4,6 +4,7 @@ import "./globals.css";
 import HeaderSection from "@/components/HeaderSection";
 import { FooterSection } from "@/components/Footer";
 import { siteMetadata } from "@/data/siteMetadata";
+import Copyright from "@/components/Copyright";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,7 +16,6 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-
 
 export const metadata: Metadata = {
   title: siteMetadata.title,
@@ -39,7 +39,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <HeaderSection />
-        <main className="mt-6 mb-44">{children}</main>
+        <main className="mt-6 mb-36">
+          {children}
+          <Copyright />
+        </main>
 
         <FooterSection />
       </body>
