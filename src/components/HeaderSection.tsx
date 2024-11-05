@@ -17,14 +17,14 @@ const HeaderSection = () => {
 
   return (
     <>
+      {/* スクロールを監視するためのダミー要素 */}
+      <div ref={ref} className="h-1" />
       {/* ヘッダー */}
       <header
         className={`fixed top-0 w-full z-10 transition-transform duration-300 ${
           showHeader ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        {/* スクロールを監視するためのダミー要素 */}
-        <div ref={ref} className="h-1" />
         <div className="backdrop-filter backdrop-blur-lg bg-secondary/20">
           <div className="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
             <Link href={"/"} className="flex items-center py-4 ">
