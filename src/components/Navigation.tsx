@@ -5,35 +5,30 @@ import { CustomLink } from "./CustomLink";
 
 export const labels = [
   { href: "/about", label: "ご挨拶" },
-  { href: "/#lessons", label: "教室のご案内" },
-  { href: "/#classes", label: "演奏のご依頼" },
-  { href: "/#contact", label: "Contact" },
-  { href: "/gallery", label: "Gallery" },
+  { href: "/#lessons", label: "教室案内" },
+  { href: "/#access", label: "アクセス" },
+  { href: "/#classes", label: "演奏ご依頼" },
+  { href: "/#contact", label: "コンタクト" },
 ];
 
-type Props = {
-  className?: string;
-  type?: "entrance" | "main";
-};
-
-export const Navigation: React.FC<Props> = () => {
+export const Navigation = () => {
   const handleNavBarOpen = () => {
     return setIsNavbarOpen(!isNavbarOpen);
   };
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   return (
-    <nav>
-      <div className="fixed right-5 bottom-0 z-50 rounded pt-1">
+    <>
+      <div className="fixed right-5 bottom-0 rounded pt-1">
         <button
           type="button"
-          className="mx-1 h-20 w-20 rounded"
+          className="mx-1 h-20 w-20 rounded z-50"
           aria-label="Toggle Menu"
           onClick={handleNavBarOpen}
         >
           <img
             alt="navigation icon"
-            src="/static/images/icon.jpg"
+            src="/static/images/icon.JPG"
             className="z-50 w-20 rounded-full md:w-24 bg-white border-2 border-sky-200 animate-pulse"
             width="30px"
             height="30px"
@@ -48,7 +43,7 @@ export const Navigation: React.FC<Props> = () => {
           <button
             type="button"
             aria-label="toggle modal"
-            className="fixed top-5 h-4/5 w-full cursor-auto focus:outline-none"
+            className="fixed -top-7 h-4/5 w-full cursor-auto focus:outline-none"
             onClick={handleNavBarOpen}
           ></button>
           <nav className="z-0 py-8 text-center md:mt-40">
@@ -67,6 +62,6 @@ export const Navigation: React.FC<Props> = () => {
           </nav>
         </div>
       </div>
-    </nav>
+    </>
   );
 };

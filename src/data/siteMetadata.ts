@@ -15,7 +15,7 @@ export const siteMetadata = {
   },
   email: "puretone.fo.88@gmail.com",
   instagram: "https://www.instagram.com/fl_puretone?igsh=ajFudWs2bTM4bzZu",
-  youtube: "https://youtube.com/@hirokoocarina?si=OPJccqJyRjGNOE-n",
+  youtube: "https://youtube.com/@hirokoflute?si=SNAl7Mw9f1W7pK3F",
   youtube_okarina: "https://youtube.com/@hirokoocarina?si=OPJccqJyRjGNOE-n",
   locale: "ja-JP",
   keywords: "音楽教室,オカリナ,フルート",

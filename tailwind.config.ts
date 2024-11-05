@@ -9,13 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
         primary: "#595959", // キーカラー1（例: テキスト用）
+        secondary: "#9394A7", // キーカラー1（例: テキスト用）
         whitish: "#F2F0F2", // キーカラー1（例: テキスト用）
         pink: "#F2CEE6", // キーカラー2（例: ピンク
         pink_strong: "#f5abdc", // キーカラー2（例: ピンク
-        blue: "#BBDDF2", // キーカラー2（例: blue
+        blue: "#82cefa", // キーカラー2（例: blue
+        light_blue: "#CFF6FF", // キーカラー2（例: blue
+        blue_green: "#A6DA3E", // キーカラー2（例: blue
+        purple: "#D6BEF1", // キーカラー2（例: blue
       },
     },
   },

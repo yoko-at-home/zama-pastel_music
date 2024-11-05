@@ -1,42 +1,30 @@
 "use client";
 import { siteMetadata } from "@/data/siteMetadata";
-import { labels } from "../Navigation";
-import Link from "next/link";
-import { IoIosMail } from "react-icons/io";
+
 import { CustomLink } from "../CustomLink";
+import { SnsLinks } from "./SnsLinks";
+import { labels } from "../Navigation";
+import { ClipTextTitle } from "../TextStyle/ClipTextTitle";
 
 export const FooterSection = () => {
   return (
-    <footer className="bg-primary text-whitish pt-10 pb-6 flex-col">
-      <nav className="flex justify-center flex-wrap gap-6 font-medium mb-5">
+    <footer className="fixed bottom-0 w-full bg-clip-padding backdrop-filter backdrop-blur-lg bg-light_blue/40 text-primary pt-4 pb-2 flex-col text-sm">
+      <nav className="flex justify-center flex-wrap gap-4 font-medium mb-5">
         {labels.map(({ href, label }) => {
           return (
             <CustomLink
               key={href}
               href={href}
               // onClick={handleNavBarOpen}
-              className="hover:text-blue"
+              className="hover:text-blue_green"
             >
-              {label}
+              <ClipTextTitle fontSize="small">{label}</ClipTextTitle>
             </CustomLink>
           );
         })}
       </nav>
-      <div className="flex justify-center space-x-5">
-        <a href={`mailto:${siteMetadata.email}`} title="Email">
-          <IoIosMail />
-        </a>
-        <Link href={siteMetadata.instagram} target="_blank">
-          Instagram
-        </Link>
-        <Link href={siteMetadata.youtube} target="_blank">
-          YouTubeフルート
-        </Link>
-        <Link href={siteMetadata.youtube_okarina} target="_blank">
-          YouTubeオカリナ
-        </Link>
-      </div>
-      <div className="max-w-6xl mx-auto px-4 text-center">
+      <SnsLinks />
+      <div className="max-w-6xl text-center">
         <p>
           {`© ${new Date().getFullYear()} `} {siteMetadata.title}. All rights
           reserved.
