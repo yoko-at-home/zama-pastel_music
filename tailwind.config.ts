@@ -19,6 +19,9 @@ const config: Config = {
         blue_green: "#A6DA3E", // キーカラー2（例: blue
         purple: "#D6BEF1", // キーカラー2（例: blue
       },
+      padding: {
+        "9/16": "56.25%", // Aspect ratio 16:9
+      },
     },
   },
   plugins: [],
