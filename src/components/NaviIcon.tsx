@@ -7,7 +7,7 @@ export const NaviIcon = () => {
     <Link href={"/"} className="flex items-center py-4 ">
       <Image
         className="rounded-full"
-        src={"/static/images/icon.jpg"}
+        src="/static/images/icon.jpg"
         alt="pastelイメージキャラクター"
         height={50}
         width={50}
