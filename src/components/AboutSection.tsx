@@ -14,8 +14,8 @@ const AboutSection = () => {
           <Image
             src={"/static/images/portrait.JPG"}
             alt=""
-            height={200}
-            width={120}
+            height={300}
+            width={250}
             className="rounded-full border-4 border-purple border-double mt-3"
           />
         </div>
