@@ -4,11 +4,11 @@ import { useState } from "react";
 import { CustomLink } from "./CustomLink";
 
 export const labels = [
-  { href: "/about", label: "ご挨拶" },
-  { href: "/#lessons", label: "教室案内" },
-  { href: "/#access", label: "アクセス" },
-  { href: "/#classes", label: "演奏ご依頼" },
   { href: "/#contact", label: "コンタクト" },
+  { href: "/#access", label: "アクセス" },
+  { href: "/#about", label: "ご挨拶" },
+  { href: "/#lesson", label: "教室案内" },
+  { href: "/", label: "Top" },
 ];
 
 export const Navigation = () => {

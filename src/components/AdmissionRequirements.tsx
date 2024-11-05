@@ -51,7 +51,9 @@ export default function AdmissionRequirements() {
       className="px-8 py-16 bg-white text-gray-800 shadow-md rounded-lg mt-8"
       id="admission"
     >
-      <h2 className="text-2xl font-bold text-center mb-6">♪ 募集要項 ♪</h2>
+      <h2 className="text-2xl font-bold text-center mb-6">
+        ご入会の流れと大切なご案内
+      </h2>
       <div className="space-y-6">
         {requirements.map((item) => (
           <div key={item.id} className="flex items-start">

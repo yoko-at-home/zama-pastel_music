@@ -16,13 +16,13 @@ const HeroSection = () => {
             href="#performance"
             className="mx-2 bg-pink_strong hover:bg-primary/30 text-whitish py-2 px-4 rounded-md"
           >
-            演奏ご依頼
+            講師演奏
           </a>
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-center">
           <div className="flex flex-col items-center justify-center">
             <Image
-              src={"/static/images/icon.JPG"}
+              src={"/static/images/IMG_0150.JPG"}
               alt=""
               height={200}
               width={120}
