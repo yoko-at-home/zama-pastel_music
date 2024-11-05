@@ -23,6 +23,8 @@ const HeaderSection = () => {
           showHeader ? "translate-y-0" : "-translate-y-full"
         }`}
       >
+        {/* スクロールを監視するためのダミー要素 */}
+        <div ref={ref} className="h-1" />
         <div className="backdrop-filter backdrop-blur-lg bg-secondary/20">
           <div className="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
             <Link href={"/"} className="flex items-center py-4 ">
@@ -33,8 +35,6 @@ const HeaderSection = () => {
             <NaviIcon />
           </div>
         </div>
-        {/* スクロールを監視するためのダミー要素 */}
-        <div ref={ref} className="h-1" />
       </header>
     </>
   );
