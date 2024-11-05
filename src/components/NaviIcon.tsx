@@ -8,7 +8,7 @@ export const NaviIcon = () => {
       <Image
         className="rounded-full"
         src={"/static/images/icon.jpg"}
-        alt="pastel"
+        alt="pastelイメージキャラクター"
         height={50}
         width={50}
       />
