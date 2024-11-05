@@ -8,32 +8,32 @@ const items = [
     description:
       "「音楽は心の栄養」。丁寧で楽しいレッスンで、充実したフルートの時間を一緒に楽しみましょう。",
     icon: <VscMusic className="text-blue text-3xl mb-4" />,
-    price: "/#admission",
-    link: "/#pricing",
+    more: "/#lessonAdult",
+    link: "/#pricingAdult",
   },
   {
     title: "楽しさから学べるレッスン",
     description:
       "「好きこそものの上手なれ」をモットーに、やさしく楽しいレッスンで音楽を好きになるサポートをします。",
     icon: <FaChild className="text-blue_green text-3xl mb-4" />,
-    price: "/#admission",
-    link: "/#pricing",
+    more: "/#lessonChild",
+    link: "/#pricingChild",
   },
   {
     title: "自宅でオンラインレッスン",
     description:
       "YouTube『Pastel harmony』でもお届けしている、癒しの音楽を自宅で手軽に学べます。",
     icon: <FaLaptop className="text-purple-500 text-3xl mb-4" />,
-    price: "/#admission",
-    link: "/#pricing",
+    more: "/#lessonOnline",
+    link: "/#pricingOnline",
   },
   {
     title: "癒しと感動の音楽をお届け",
     description:
       "サントリーホールでの経験もある講師が、心に響く音楽で大切なイベントを彩ります。",
     icon: <PiMusicNoteThin className="text-pink_strong text-3xl mb-4" />,
-    price: "/#admission",
-    link: "/#pricing",
+    more: "/#performance",
+    link: "/#pricingPerformance",
   },
 ];
 
@@ -50,16 +50,16 @@ const LessonSection = () => {
               <p>{item.description}</p>
               <div className="flex justify-around gap-4 mt-3">
                 <p className=" bg-purple text-white rounded-md">
-                  <Link href={item.price}>
+                  <Link href={item.more}>
                     <span className="bg-purple text-white rounded-md px-4 py-2 cursor-pointer">
-                      募集要項
+                      ご案内
                     </span>
                   </Link>
                 </p>
                 {item.link && (
                   <Link href={item.link}>
                     <span className=" bg-purple text-white rounded-md px-4 py-2 cursor-pointer">
-                      詳細へ
+                      詳細
                     </span>
                   </Link>
                 )}

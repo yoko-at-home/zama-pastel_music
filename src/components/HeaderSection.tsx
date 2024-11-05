@@ -10,7 +10,7 @@ const HeaderSection = () => {
   const [showHeader, setShowHeader] = useState(true);
 
   // Intersection Observerの設定
-  const { ref, inView } = useInView({
+  const { ref } = useInView({
     threshold: 0,
     onChange: (inView) => setShowHeader(inView),
   });

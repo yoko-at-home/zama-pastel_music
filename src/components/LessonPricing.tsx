@@ -6,7 +6,7 @@ export default function LessonPricing() {
         ♪ レッスン料金表 & 使用教材 ♪
       </h2>
 
-      <section className="mb-8">
+      <section className="mb-8" id="pricingAdult">
         <h3 className="text-xl font-semibold mb-4">
           大人のコース（中学生以上）
         </h3>
@@ -53,7 +53,7 @@ export default function LessonPricing() {
         </ul>
       </section>
 
-      <section className="mb-8">
+      <section className="mb-8" id="pricingChild">
         <h3 className="text-xl font-semibold mb-4">小学生のコース</h3>
         <table className="w-full mb-4 border border-gray-300">
           <thead>
@@ -84,7 +84,7 @@ export default function LessonPricing() {
         <p className="text-sm text-gray-600">※施設使用料、諸経費込み</p>
       </section>
 
-      <section className="mb-8">
+      <section className="mb-8" id="pricingOcarina">
         <h3 className="text-xl font-semibold mb-4">オカリナコース</h3>
         <table className="w-full mb-4 border border-gray-300">
           <thead>
@@ -116,7 +116,7 @@ export default function LessonPricing() {
         <p className="text-sm text-gray-800">使用教材：ご相談</p>
       </section>
 
-      <section className="mb-8">
+      <section className="mb-8" id="pricingOnline">
         <h3 className="text-xl font-semibold mb-4">オンラインレッスン</h3>
         <table className="w-full mb-4 border border-gray-300">
           <thead>
@@ -140,7 +140,7 @@ export default function LessonPricing() {
         <p className="text-sm text-gray-800">使用教材：ご相談</p>
       </section>
 
-      <section className="mb-8">
+      <section className="mb-8" id="pricingInfo">
         <p className="text-sm text-gray-800 mb-2">
           基礎練習から曲まで、充実したレッスンプログラムを基本としていることから、60分コースをお勧めしております。
         </p>
