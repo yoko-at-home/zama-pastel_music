@@ -22,7 +22,7 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center">
           <div className="flex flex-col items-center justify-center">
             <Image
-              src={"/static/images/IMG_0150.JPG"}
+              src={"/static/images/icon.JPG"}
               alt=""
               height={200}
               width={120}
