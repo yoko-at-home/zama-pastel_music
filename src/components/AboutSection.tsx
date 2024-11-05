@@ -11,7 +11,7 @@ const AboutSection = () => {
       <div className=" bg-opacity-80 p-10 rounded-lg max-w-lg mx-3 sm:mx-auto bg-cover ">
         <div className="flex flex-col  items-center justify-center">
           <div className="flex flex-col items-center justify-center">
-            <ClipTextTitle>講師　菅 博子</ClipTextTitle>
+            <ClipTextTitle fontSize="large">講師　菅 博子</ClipTextTitle>
             <Image
               src={"/static/images/portrait.JPG"}
               alt=""
