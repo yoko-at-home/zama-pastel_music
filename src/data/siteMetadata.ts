@@ -13,7 +13,7 @@ export const siteMetadata = {
     creator: "@yokoiwasaki6",
     images: "",
   },
-  email: "picopico2seven@gmail.com",
+  email: "puretone.fo.88@gmail.com",
   instagram: "https://www.instagram.com/fl_puretone?igsh=ajFudWs2bTM4bzZu",
   youtube: "https://youtube.com/@hirokoflute?si=SNAl7Mw9f1W7pK3F",
   youtube_okarina: "https://youtube.com/@hirokoocarina?si=OPJccqJyRjGNOE-n",
